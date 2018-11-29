@@ -5,8 +5,8 @@ This module uses ROSEGRAPHICS to demonstrate:
   -- accessing their DATA via INSTANCE VARIABLES.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Aaron Wilkin, their colleagues, and Cleo Barmes.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 #
@@ -21,35 +21,35 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #
 #        -- In what direction on the screen
 #           does the positive X-axis point?
-#              WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#              RIGHT
 #
 #        -- In what direction on the screen
 #           does the positive Y-axis point?
-#              WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#              DOWN
 #
 #     b. Write a line of code that constructs a RoseWindow object:
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            rg.RoseWindow()
 #
 #     c. What is the default height of a RoseWindow?
 #        (Use the HOVER trick to determine the answer to this question.)
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            300
 #
 #     d. Write a line of code that construct a RoseWindow object
 #        whose height is 100:  (Use the HOVER trick to figure it out)
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            rg.RoseWindow(height=100)
 #
 #     e. Use the DOT trick to answer the following:
 #
 #          -- Write the names of two types of graphics objects that
 #             you can construct OTHER than Circle and Point:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                rg.Rectangle
 #
 #          -- Write the names of three METHODs that Circle objects have:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                attach_to   clone   detach_from
 #
 #          -- Write the names of three INSTANCE VARIABLEs that Circle
 #             objects have:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                center    radius    fill_color
 #
 #     f. What does a RoseWindow RENDER method do?
 #            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
@@ -66,7 +66,6 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #   change the above TODO to DONE.
 #
 ###############################################################################
-
 import rosegraphics as rg
 
 
@@ -78,6 +77,15 @@ def main():
       -- accessing their DATA via INSTANCE VARIABLES
     """
     example1()
+    width = 700
+    height = 400
+    window - rg.RoseWindow(width, height)
+
+    ...
+    center_point rg.point(300,100)
+    radius = 50
+    circle.rg.circle(center_point, radius)
+    circle.fill_color = 'green'
     example2()
     example3()
 

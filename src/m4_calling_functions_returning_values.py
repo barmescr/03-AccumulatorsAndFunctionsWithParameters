@@ -186,9 +186,7 @@ def digits_in_cube(n):
       this function returns (1 + 2 + 5), which is 8.
     """
 
-    m = n **3
 
-    return sum_of_digits(m)
 
 
 
@@ -206,6 +204,9 @@ def digits_in_cube(n):
     ###########################################################################
     # -------------------------------------------------------------------------
 
+    m = n **3
+
+    return sum_of_digits(m)
 
 def run_test_digits_in_power():
     """ Tests the   digits_in_power   function. """
