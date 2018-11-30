@@ -170,10 +170,10 @@ def run_test_digits_in_cube():
     print('Test 3 expected:', expected)
     print('       actual:  ', answer)
 
-    # Test 1:
+    # Test 4:
     expected = 18
     answer = digits_in_cube(15)
-    print('Test 1 expected:', expected)
+    print('Test 4 expected:', expected)
     print('       actual:  ', answer)
 
 def digits_in_cube(n):
@@ -194,7 +194,7 @@ def digits_in_cube(n):
 
 
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #   That is called TEST-DRIVEN DEVELOPMENT (TDD).
     #
@@ -211,7 +211,7 @@ def digits_in_cube(n):
 def run_test_digits_in_power():
     """ Tests the   digits_in_power   function. """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement this function.
+    # DONE: 5. Implement this function.
     #   It TESTS the  digits_in_power  function defined below.
     #   Include at least **   3   ** tests.
     #
@@ -222,6 +222,29 @@ def run_test_digits_in_power():
     print('Testing the   digits_in_power   function:')
     print('--------------------------------------------------')
 
+    # Test 1:
+    expected = 9
+    answer = digits_in_power(12,2)
+    print('Test 1 expected:', expected)
+    print('       actual:  ', answer)
+
+    # Test 2:
+    expected = 9
+    answer = digits_in_power(3, 4)
+    print('Test 2 expected:', expected)
+    print('       actual:  ', answer)
+
+    # Test 3:
+    expected = 11
+    answer = digits_in_power(5, 5)
+    print('Test 3 expected:', expected)
+    print('       actual:  ', answer)
+
+ # Test 4:
+    expected = 8
+    answer = digits_in_power(20,3)
+    print('Test 4 expected:', expected)
+    print('       actual:  ', answer)
 
 def digits_in_power(n, k):
     """
@@ -234,8 +257,14 @@ def digits_in_power(n, k):
       this function returns 18
       since 12 to the 3rd power is 1728 (whose digits sum to 18).
     """
+
+    m = n ** k
+    return sum_of_digits(m)
+
+
+
     # -------------------------------------------------------------------------
-    # TODO: 6. Implement and test this function.
+    # DONE: 6. Implement and test this function.
     #
     ###########################################################################
     # IMPORTANT: CALL, as many times as needed,
