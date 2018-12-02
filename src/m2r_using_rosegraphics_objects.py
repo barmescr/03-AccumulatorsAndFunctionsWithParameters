@@ -82,7 +82,7 @@ def main():
     window - rg.RoseWindow(width, height)
 
     ...
-    center_point rg.point(300,100)
+    center_point rg.Point(300,100)
     radius = 50
     circle.rg.circle(center_point, radius)
     circle.fill_color = 'green'
