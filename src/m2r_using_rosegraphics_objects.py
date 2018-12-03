@@ -17,7 +17,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #     a. For the RoseGraphics coordinate system:
 #
 #        -- Where is the (0, 0) point on the screen?
-#              WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#              center
 #
 #        -- In what direction on the screen
 #           does the positive X-axis point?
@@ -52,11 +52,13 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #                center    radius    fill_color
 #
 #     f. What does a RoseWindow RENDER method do?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            seconds_to_pause
 #
 #     g. When is a RoseWindow close_on_mouse_click method call
 #        necessary?  Why?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            When you want to keep the window open after all everything is computed.
+#            If you do not use RoseWindow Close_on_mouse_click, then the window will close
+#            without giving you the time necessary to view it.
 #
 #   ASK QUESTIONS ** NOW ** if you do not understand how the
 #     RoseGraphics graphics system works.
@@ -68,6 +70,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 ###############################################################################
 import rosegraphics as rg
 
+rg.RoseWindow.render()
 
 def main():
     """
@@ -77,15 +80,6 @@ def main():
       -- accessing their DATA via INSTANCE VARIABLES
     """
     example1()
-    width = 700
-    height = 400
-    window - rg.RoseWindow(width, height)
-
-    ...
-    center_point rg.Point(300,100)
-    radius = 50
-    circle.rg.circle(center_point, radius)
-    circle.fill_color = 'green'
     example2()
     example3()
 
